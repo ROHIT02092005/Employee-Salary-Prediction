@@ -1,68 +1,59 @@
-#AI--Employee-Salary-Prediction
-AI Project to predict employee salaries using machine learning
-This repository contains my project submission for the *IBM AI PBEL Course*.  
-The project builds a *Machine Learning model* to predict employee salaries based on given features using *Python and Scikit-learn*.
+# 💰 Employee Salary Prediction — Streamlit App
+
+A full-featured, interactive, 3D salary prediction dashboard built with Streamlit, XGBoost, and Plotly.
 
 ---
 
-## 📂 Repository Structure
-- EmployeSalaryPrediction.ipynb → Jupyter Notebook with source code  
-- Salary Data.xls → Dataset used for model training and testing  
-- README.md → Project documentation  
+## 🚀 Setup & Run
+
+### 1. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Place your dataset
+Make sure `Salary_Data.csv` is in the **same folder** as `app.py`.
+
+### 3. Run the app
+```bash
+streamlit run app.py
+```
 
 ---
 
-## 🛠 Tech Stack & Tools
-- *Language:* Python  
-- *Libraries:* Pandas, NumPy, Scikit-learn, Matplotlib  
-- *IDE/Environment:* Jupyter Notebook (IBM Watson Studio or local)  
-- *Version Control:* GitHub  
+## 📦 File Structure
+```
+📁 your-folder/
+├── app.py              ← Main Streamlit app
+├── Salary_Data.csv     ← Your dataset
+├── requirements.txt    ← Python dependencies
+└── README.md
+```
 
 ---
 
-## 🔬 Project Workflow
-1. *Data Preprocessing*  
-   - Load dataset (Salary Data.xls)  
-   - Handle missing values and data cleaning  
-2. *Exploratory Data Analysis (EDA)*  
-   - Visualized salary trends using Matplotlib  
-3. *Model Training*  
-   - Linear Regression  
-   - Random Forest Regression  
-4. *Model Evaluation*  
-   - Compared performance metrics (R² score, Mean Squared Error)  
+## 🌟 Features
+
+| Page | Features |
+|------|----------|
+| 🏠 Dashboard | KPI cards, salary by education/gender, top-paying jobs, experience distribution |
+| 🔮 Salary Predictor | Live prediction gauge, confidence range, what-if slider, AI-generated tips |
+| 📊 Data Explorer | 3D salary surface, 3D scatter, violin/box plots, correlation heatmap |
+| 🧠 Model Insights | Feature importance, actual vs predicted, 3D LR vs XGBoost comparison |
+| 📦 Batch Predictor | CSV upload → bulk predictions → download results |
+| ⚖️ Profile Compare | Compare 2–3 profiles with grouped bar + radar chart |
+| 📈 Career Growth | Salary trajectory + 3D growth landscape |
 
 ---
 
-## 📊 Results
-- Achieved *92% accuracy* with Random Forest Regression  
-- Salary trends visualized across different features  
-- Final model provides reliable predictions  
+## 🤖 Models
+- **Linear Regression** — R² ≈ 93.5%
+- **XGBoost Regressor** — R² ≈ 94.6%
 
 ---
 
-## 🚀 How to Run
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/ROHIT02092005/AI--Employee-Salary-Prediction.git
-2. Open EmployeSalaryPrediction.ipynb in Jupyter Notebook
-3. Install Dependencies:
-    pip install pandas numpy scikit-learn matplotlib
-   
-
-📌 Course Information
-
-This project is part of the IBM AI PBEL Course (AI Professional Badge in Experiential Learning)
-Key skills demonstrated:
-	•	Data Analytics & Preprocessing
-	•	Machine Learning Model Building
-	•	Model Evaluation & Visualization
-
-
-✨ Author
-
-👤 Rohit Srivastava
-📧 Email: rohitsrivastava0209@gmail.com
-🔗 LinkedIn: https://www.linkedin.com/in/rohit-srivastava-47b2aa292/
-
-⭐ “Open to internships and freelancing opportunities in Data Analytics and Machine Learning.”
+## 💻 Tech Stack
+- [Streamlit](https://streamlit.io) — UI framework
+- [Plotly](https://plotly.com) — Interactive & 3D charts
+- [XGBoost](https://xgboost.readthedocs.io) — Gradient boosting model
+- [scikit-learn](https://scikit-learn.org) — ML utilities
